@@ -1,13 +1,13 @@
 import react from "react";
-
+import Button from '@material-ui/core/Button'
 interface Props {
     setCount: () => void;
 }
-export const Button = (Props:Props) =>{
- return <button 
+export const Buttonmain = (Props:Props) =>{
+ return <Button variant="outlined" color="secondary"
        onClick= {Props.setCount}
        >
-        button</button>;
+        button</Button>;
 
 };
 //  ボタンを押すという動作を作る
