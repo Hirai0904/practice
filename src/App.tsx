@@ -3,10 +3,12 @@ import logo from './logo.svg';
 import './App.css';
 import {Number} from "./Number";
 import { Button } from './Button';
+import{makeStyles} from '@material-ui/core/styles'
 // importとexportをしっかり定義
 
 function App() {
   const [count, setCount]= useState(0);
+  
 
 
   return (
