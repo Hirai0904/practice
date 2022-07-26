@@ -21,6 +21,7 @@ interface Props {
 export const Button = (Props:Props) =>{
     const classes = useStyles();
  return <button className={classes.root}
+
        onClick= {Props.setCount}
        >
         button</button>;
