@@ -1,9 +1,4 @@
-import React, { useCallback, useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import {Number} from "./Number";
-import { Button } from './Button';
-import{makeStyles} from '@material-ui/core/styles'
+import { Button2 } from "./Buttondown";
 // importとexportをしっかり定義
 
 function App() {
@@ -14,12 +9,11 @@ function App() {
   return (
     <div>
      <Number count={count} />
-      <Button
-        setCount={() => {
-          setCount(count +1)
-        }
-      }/>
-      
+      <Button2
+        setCountdown={() => {
+          return setCount(count - 1);
+        }}
+      />
     </div>
   );
 }
