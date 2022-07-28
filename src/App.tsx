@@ -21,23 +21,26 @@ function App() {
       <Grid container spacing={3}>
         <Grid item xs={4} style={{ textAlign: "center" }}>
           <Button1
-            setCountup={() => {
-              setCount(count + 1);
+            onClick={() => {
+              return setCount(count + 1);
             }}
+            label={"up"}
           />
         </Grid>
         <Grid item xs={4} style={{ textAlign: "center" }}>
-          <Button2
-            setCountdown={() => {
+          <Button1
+            onClick={() => {
               return setCount(count - 1);
             }}
+            label={"down"}
           />
         </Grid>
         <Grid item xs={4} style={{ textAlign: "center" }}>
-          <Button3
-            setCountreset={() => {
+          <Button1
+            onClick={() => {
               return setCount(0);
             }}
+            label={"reset"}
           />
         </Grid>
       </Grid>
