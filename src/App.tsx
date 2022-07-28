@@ -1,11 +1,8 @@
 import { useState } from "react";
 import "./App.css";
-import { makeStyles } from "@material-ui/core/";
 import Grid from "@material-ui/core/Grid";
 import { Number } from "./Number";
 import { Button1 } from "./Button";
-import { Button2 } from "./Buttondown";
-import { Button3 } from "./Buttonreset";
 // importとexportをしっかり定義
 
 function App() {
