@@ -4,7 +4,7 @@ interface Props {
   count: number;
 }
 
-export const Number = (Props: Props) => {
+export const Number = (props: Props) => {
   // Propsの役割 App>number の親子関係の中で、子にその値を渡す
   return (
     <div>
@@ -16,7 +16,7 @@ export const Number = (Props: Props) => {
           textAlign: "center",
         }}
       >
-        {Props.count} 回
+        {props.count} 回
       </h1>
     </div>
   );

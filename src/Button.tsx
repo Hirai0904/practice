@@ -18,11 +18,11 @@ interface Props {
   onClick: () => void;
   label: string; //NOTE:情報の型を決める
 }
-export const Button1 = (Props: Props) => {
+export const Button1 = (props: Props) => {
   const classes = useStyles();
   return (
-    <Button size="large" className={classes.root} onClick={Props.onClick}>
-      {Props.label}
+    <Button size="large" className={classes.root} onClick={props.onClick}>
+      {props.label}
     </Button>
   );
 };

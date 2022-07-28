@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 import Grid from "@material-ui/core/Grid";
 import { Number } from "./Number";
 import { Button1 } from "./Button";
